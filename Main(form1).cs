@@ -40,12 +40,12 @@ namespace WindowsFormsApp5
             string bilgilerial = donenBilgiler.ReadToEnd(); //incoming info to string
             dynamic coin = JObject.Parse(bilgilerial); //incoming info to parsing
             
-            if (coin[coins[a]][cats[3]] < 0) //Visibility of Green and Red arrows
+            if (coin[coins[a]][cats[4]] < 0) //Visibility of Green and Red arrows
             {
                     r0.Visible = true;
                     g0.Visible = false;
                 }
-            else if (coin[coins[a]][cats[3]] > 0)
+            else if (coin[coins[a]][cats[4]] > 0)
                 {
                     r0.Visible = false;
                     g0.Visible = true;
